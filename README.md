@@ -1,0 +1,11 @@
+# bili_json_craw
+调用bilibili手机端接口，爬取收藏夹，排行榜，历史记录等等数据
+
+流程：
+
+使用httpclient调用bilibili接口，获得一串json数据，用jackson处理并封装成javabean，然后用mybatis框架存入数据库
+
+需要注意的是，这里的bilibili接口需要自己抓包获得，而我使用的是自己手机抓包获得的，其中一些参数是登陆后服务器生成用于身份识别，所以需要你自己来抓
+
+
+这里提供的是调用httclient发送请求，以及处理接受到的json，最后存入数据库这样的功能
